@@ -13,8 +13,7 @@ pipeline {
 	}
 	 stage('Test'){
             steps {
-                sh 'mvn tset'
-                junit 'reports/**/*.xml' 
+                sh 'mvn tset' 
                    }
 	    }
 	 stage('Package'){
